@@ -155,9 +155,8 @@ body {
 .edu-row {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-  flex-wrap: wrap;
-  gap: 6px;
+  align-items: flex-start;
+  gap: 12px;
 }
 .edu-degree {
   font-size: 14px;
@@ -177,6 +176,8 @@ body {
   border-radius: 99px;
   border: 1px solid var(--border);
   white-space: nowrap;
+  flex-shrink: 0;
+  margin-left: auto;
 }
 
 /* ── SKILLS ── */
@@ -335,7 +336,7 @@ body {
     <!-- EDUCATION -->
     <div class="section">
       <p class="section-title">Education</p>
-      <div class="edu-row">
+      <div class="edu-row" style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;">
         <div>
           <p class="edu-degree">Master of Professional Accounting</p>
           <p class="edu-school">Specialization in Business Valuation &nbsp;·&nbsp; Seattle University, Albers School of Business &nbsp;·&nbsp; Dean's List &nbsp;·&nbsp; Seattle, WA</p>
